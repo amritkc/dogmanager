@@ -1,4 +1,3 @@
-import React from 'react';
 import { SendDataButtonProps } from '../../utils/constant';
 
 function SendDataButton({ dogs }: SendDataButtonProps) {

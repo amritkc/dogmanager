@@ -12,3 +12,6 @@ export interface DogListProps{
 export interface SendDataButtonProps {
   dogs: Dog[];
 }
+export interface addDogsProps{
+    addDog:(name:string,age:number) => void
+}

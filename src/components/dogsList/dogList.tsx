@@ -1,9 +1,6 @@
-import React from 'react'
 import { DogListProps } from '../../utils/constant'
 
 function DogList(props: DogListProps) {
-
-    console.log("222", props.dogs)
     return (
         <div>
             <h2>Dog's List</h2>

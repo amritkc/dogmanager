@@ -4,20 +4,13 @@ import DogList from './components/dogsList/dogList';
 import SendDataButton from './components/sendDataButton/sendDataButton';
 import { getCurrentDateTime } from './utils/getCurrentDate';
 import DogForm from './components/dogForm/dogForm';
-
-
-interface Dog {
-  name: string;
-  age: number;
-}
+import { Dog } from './utils/constant';
 
 function App() {
-
   const [dogs, setDogs] = useState<Dog[]>([]);
   const [lastUpdate, setLastUpdate] = useState('');
 
   const addDogs = (name: string, age: number) => {
-    console.log("sdasds", name)
     setDogs([...dogs, { name, age }])
     setLastUpdate(getCurrentDateTime())
   }
